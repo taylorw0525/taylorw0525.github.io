@@ -1,0 +1,207 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    color: #ffffff;
+    background-color: #1a1a1a;
+    overflow-x: hidden; /* Prevents horizontal scrolling issues */
+}
+
+/* Top heading */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(0, 0, 0, 0.7); /* Slight transparency for readability */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Portfolio Logo */
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+/* Navigation Bar */
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: 0.3s;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+}
+
+.navbar a:hover {
+    color: rgb(198, 100, 228);
+}
+
+/* Home Section */
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(webpage.png) no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 10%; 
+    
+}
+
+/* Home Content */
+.home-content {
+    max-width: 600px;
+}
+
+/* Heading Text */
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.5s; /* Adjusted for better UX */
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+/* Animated Text Line */
+.home-content h3 span {
+    color: rgb(198, 100, 228);
+    font-weight: bold;
+}
+
+/* Paragraph */
+.home-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 2s;
+    color:rgba(0, 0, 0, 0.7);
+}
+
+/* Social Icons */
+.home-sci {
+    display: flex;
+    gap: 15px;
+    margin-top: 60px;
+}
+
+.home-sci a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #e2d6f8;
+    border-radius: 50%;
+    font-size: 24px;
+    color:rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    transition: 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 2.5s;
+}
+
+/* Social Icons Hover */
+.home-sci a:hover {
+    background: rgb(198, 100, 228);
+    color: black;
+    box-shadow: 0 0 15px #0ef;
+    transform: scale(1.1);
+}
+
+/* Resume Button */
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: rgb(198, 100, 228);
+    border-radius: 30px;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 3s;
+    margin-top: 60px;
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 10px rgb(198, 100, 228), 0 0 30px rgb(198, 100, 228), 0 0 50px rgb(198, 100, 228);
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
