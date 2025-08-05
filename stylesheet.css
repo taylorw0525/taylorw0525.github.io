@@ -31,6 +31,7 @@
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+    margin-left: -40px;
   }
   
   .navbar a {
@@ -50,26 +51,27 @@
   .home {
     width: 100%;
     height: 100vh;
-    background-color: #e2d6f8;
+    background: url('webpage.png') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
+}
+
   .home-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 60px;
     padding: 0 10%;
-    max-width: 1200px;
-    flex-wrap: wrap;
+    max-width: center;
+    flex-wrap: center;
   }
   
   /* Text Content */
   .home-content {
     flex: 1;
     min-width: 300px;
+    margin-left: 100px;
   }
   
   .home-content h1 {
@@ -79,9 +81,9 @@
   }
   
   .home-content h3 {
-    font-size: 28px;
-    font-weight: 600;
-    color: #6b1d8f;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
   }
   
   .home-content h3 span {
@@ -249,7 +251,7 @@
   
   .timeline-item h3 {
     color: #e2d6f8;
-    font-size: 20px;
+    font-size: 50px;
     margin-bottom: 5px;
   }
   
